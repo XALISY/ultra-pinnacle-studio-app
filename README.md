@@ -1,4 +1,6 @@
 # Ultra Pinnacle Studio App
+A professional studio application for content creation and media management.
+# Ultra Pinnacle Studio App
 
 A professional studio application for content creation and media management.
 
@@ -10,11 +12,39 @@ A professional studio application for content creation and media management.
 
 ## Getting Started
 1. Clone the repository
+
+```bash
+git clone https://github.com/XALISY/ultra-pinnacle-studio-app.git
+cd ultra-pinnacle-studio-app
+```
+
 2. Install dependencies
-3. Run the development server
+
+```bash
+npm install
+```
+
+3. Start development server
+
+```bash
+npm run dev
+```
+
+Open the dev server at http://localhost:5173 (Vite's default).
 
 ## Development
-This project is built with modern web technologies and follows best practices for performance and maintainability.
+## Scripts (from package.json)
+- `dev` - Run Vite dev server
+- `build` - Build for production
+- `preview` - Preview production build
+- `lint` - Run ESLint on the project
+
+## Development Notes
+- This project uses Vite and TypeScript. The workspace file includes recommended extensions (ESLint, Prettier, YAML, etc.).
+- If you need a specific Node version, use nvm or similar tools.
+
+## Contributing
+Contributions are welcome. Please open issues or pull requests.
 
 ## License
-MIT License
+MIT
