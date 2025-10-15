@@ -14,14 +14,27 @@
     "git.confirmSync": false,
     "github.gitAuthentication": true,
     "typescript.tsdk": "node_modules/typescript/lib",
-    "typescript.enablePromptUseWorkspaceTsdk": true
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "files.eol": "\n",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true,
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/dist/**": true
+    }
   },
   "extensions": {
     "recommendations": [
       "dbaeumer.vscode-eslint",
       "esbenp.prettier-vscode",
-      "github.vscode-pull-request-github",
-      "ms-vscode.vscode-typescript-next"
+      "codezombiech.gitignore",
+      "redhat.vscode-yaml",
+      "christian-kohler.path-intellisense",
+      "ms-vscode.vscode-typescript-next",
+      "formulahendry.auto-rename-tag",
+      "chakrounanas.turbo-console-log",
+      "usernamehw.errorlens",
+      "github.vscode-pull-request-github"
     ]
   }
 }
