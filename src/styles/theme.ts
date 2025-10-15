@@ -1,23 +1,25 @@
-import { createTheme } from '@mui/material/styles';
+import { extendTheme } from '@chakra-ui/react';
 
-export const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#1976d2',
-    },
-    secondary: {
-      main: '#dc004e',
+const theme = extendTheme({
+  config: {
+    initialColorMode: 'dark',
+    useSystemColorMode: true,
+  },
+  styles: {
+    global: {
+      body: {
+        bg: 'gray.900',
+        color: 'white',
+      },
     },
   },
-  typography: {
-    fontFamily: [
-      '-apple-system',
-      'BlinkMacSystemFont',
-      '"Segoe UI"',
-      'Roboto',
-      '"Helvetica Neue"',
-      'Arial',
-      'sans-serif',
-    ].join(','),
+  components: {
+    Button: {
+      defaultProps: {
+        colorScheme: 'blue',
+      },
+    },
   },
 });
+
+export default theme;
