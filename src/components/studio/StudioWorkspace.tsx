@@ -1,5 +1,7 @@
 import { Box, Grid, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import Timeline from '../../features/timeline/Timeline';
+import MediaLibrary from '../../features/mediaLibrary/MediaLibrary';
 
 const StudioContainer = styled(Box)(({ theme }) => ({
   padding: theme.spacing(3),
@@ -30,16 +32,10 @@ export default function StudioWorkspace() {
           </MediaPreview>
         </Grid>
         <Grid item xs={12} md={8}>
-          {/* Timeline component will go here */}
-          <Box sx={{ height: '150px', bgcolor: 'background.paper', p: 2, border: 1, borderColor: 'divider' }}>
-            <Typography>Timeline</Typography>
-          </Box>
+          <Timeline />
         </Grid>
         <Grid item xs={12} md={4}>
-          {/* Controls panel will go here */}
-          <Box sx={{ height: '150px', bgcolor: 'background.paper', p: 2, border: 1, borderColor: 'divider' }}>
-            <Typography>Controls</Typography>
-          </Box>
+          <MediaLibrary />
         </Grid>
       </Grid>
     </StudioContainer>
