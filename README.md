@@ -39,6 +39,25 @@ Open the dev server at http://localhost:5173 (Vite's default).
 - `preview` - Preview production build
 - `lint` - Run ESLint on the project
 
+## Multi-Device Development
+
+### Setting up on MacBook
+1. Install Git if not already installed:
+```bash
+brew install git  # or download from git-scm.com
+```
+
+2. Clone the repository:
+```bash
+git clone https://github.com/XALISY/ultra-pinnacle-studio-app.git
+cd ultra-pinnacle-studio-app
+```
+
+### Syncing Between Devices
+- Windows: Run `.\sync.ps1` to sync with GitHub
+- MacBook: Use `git pull origin main` to get latest changes
+- Always commit and push your changes before switching devices
+
 ## Development Notes
 - This project uses Vite and TypeScript. The workspace file includes recommended extensions (ESLint, Prettier, YAML, etc.).
 - If you need a specific Node version, use nvm or similar tools.
